@@ -13,7 +13,8 @@ tlog
 *.enc
 *.idp
 
-
+*.filters
+*.user
 
 # VS Files
 .vs
