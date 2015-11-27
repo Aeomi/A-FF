@@ -16,6 +16,8 @@ tlog
 *.filters
 *.user
 
+*.vcxproj
+
 # VS Files
 .vs
 *.opensdf
