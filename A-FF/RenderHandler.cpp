@@ -74,6 +74,8 @@ void RenderHandler::update() {
 		else
 			SDL_RenderCopyEx(_renderTarget, renderComponent->_texture, NULL, &rect, angle, NULL, SDL_FLIP_NONE);
 
+		SDL_draw
+
 	}
 
 

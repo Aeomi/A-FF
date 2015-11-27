@@ -54,3 +54,7 @@
 			- and provide the same contextual functionality
 		- An entity must utilise components where applicable, and must remain as decoupled as possible.
 			- Components may hold reference to its entity-parent, in order to communicate with other components of that entity.
+
+
+[Util/Rendering] New functionality
+	- Introduce native geometric objects
