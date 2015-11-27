@@ -1,0 +1,56 @@
+
+-- -- Handlers -- --
+
+\|	CollisionHandler
+\|	NPCHandler
+/|	RenderHandler
+
+
+
+-- -- Components -- --
+
+\|	AI
+\|	Collider
+:|	InputController
+/|	Renderer
+/|	Transform
+\|	Weapons
+
+
+
+-- -- Entities -- --
+
+/|	BaseEntity
+/|	Player
+\|	Projectile
+
+
+
+-------- TODO --------
+
+[Util/SDL] Renderable Text
+	Use SDL TTF so that text can be rendered -- Implement within Util::Render::Text
+
+
+[Component] RigidBody - Physics
+	- Implement RigidBody component, along with forces, mass, and physics. (Can call this Physics)
+	- Rotate entities towards their Transform::angle
+
+
+[Threads] Render-specific thread
+	- Use SDL_CreateThread to have RenderHandler update at VSYNC
+
+
+[Cleanup] Misc. cleanup tasks
+	- Cleanup unused imports
+	- Properly decouple each handler and component
+		- Transform component in particular
+		- Have each asset properly perform solely its own due task; 
+			- and have it not overextend its duties.
+
+		[Maintain Standards]
+		- A handler should handle its own assets and utilise them fully
+		- A component must serve as both a container for context specific data, 
+			- and provide the same contextual functionality
+		- An entity must utilise components where applicable, and must remain as decoupled as possible.
+			- Components may hold reference to its entity-parent, in order to communicate with other components of that entity.

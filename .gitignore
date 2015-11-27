@@ -1,32 +1,22 @@
-# Object files
-*.o
-*.ko
+# Compilations
+Debug
+Release
+
+*.iobj
+*.ipdb
+*.pdb
+
+*.tlog
+tlog
+*.log
 *.obj
-*.elf
+*.enc
+*.idp
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
+# VS Files
+.vs
+*.opensdf
+*.sdf
+*.sln
